@@ -7,33 +7,21 @@ export default function Nav() {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav className="w-screen h-10">
-      <button
-        className={
-          currentPage === "/"
-            ? "active:bg-violet-700 focus:ring focus:ring-violet-50"
-            : "bg-violet-400"
-        }
-      >
-        <Link to="/">Home</Link>
+    <nav className="w-screen h-16 bg-slate-700 text-slate-300 text-center flex sticky z-100 px-4">
+      <button className="rounded-md  p-7 active:ring hover:bg-slate-600 active:ring-slate-200">
+        <Link to="/" className="relative bottom-2 font-bold">
+          Home
+        </Link>
       </button>
-      <button
-        className={
-          currentPage === "/projects"
-            ? "active:bg-violet-700 focus:ring focus:ring-violet-50"
-            : "bg-violet-400"
-        }
-      >
-        <Link to="/projects">Projects</Link>
+      <button className="rounded-md  p-7 active:ring hover:bg-slate-600 active:ring-slate-200">
+        <Link to="/projects" className="relative bottom-2 font-bold">
+          Projects
+        </Link>
       </button>
-      <button
-        className={
-          currentPage === "/contact"
-            ? "active:bg-violet-700 focus:ring focus:ring-violet-50"
-            : "bg-violet-400"
-        }
-      >
-        <Link to="/contact">Contact</Link>
+      <button className="rounded-md p-7 active:ring hover:bg-slate-600 active:ring-slate-200">
+        <Link to="/contact" className="relative bottom-2 font-bold">
+          Contact
+        </Link>
       </button>
     </nav>
   );
