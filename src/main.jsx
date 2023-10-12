@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 import Home from "./components/Home.jsx";
+import Projects from "./components/Projects.jsx";
 
 const router = createBrowserRouter([
   {
