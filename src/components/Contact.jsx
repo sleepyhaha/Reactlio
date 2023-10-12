@@ -15,16 +15,16 @@ export default function Contact() {
     } else if (name === "email") {
       return setEmail(value);
     }
-
-    const handleFormSubmit = (e) => {
-      e.preventDefault();
-
-      alert(`Thanks for getting in touch ${firstName} ${lastName}`);
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-    };
   };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    alert(`Thanks for getting in touch ${firstName} ${lastName}`);
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+  };
+
   return (
     <div>
       <form className="form" onSubmit={handleFormSubmit}>
