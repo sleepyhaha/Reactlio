@@ -7,7 +7,7 @@ export default function Nav() {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav className="w-full h-10">
+    <nav className="w-screen h-10">
       <button
         className={
           currentPage === "/"
