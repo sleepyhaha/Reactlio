@@ -6,6 +6,7 @@ import "./index.css";
 
 import Home from "./components/Home.jsx";
 import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter([
   {
