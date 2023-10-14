@@ -5,7 +5,9 @@
 ## Description
 
 A portfolio of my work built using React, Tailwind and Framer Motion
-    
+
+![photo of app](/public/assets/deployed-app.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -19,28 +21,22 @@ A portfolio of my work built using React, Tailwind and Framer Motion
 ## <a name="installation"></a> Installation
 
 Head to https://main--guileless-sorbet-e3ba4c.netlify.app/ to view the deployed application
-  
+
 ## <a name="usage"></a> Usage
 
 See steps to install
-  
+
 ## <a name="test"></a> Tests
 
-
-
- ## <a name="contributing"></a> Contributing
-  
-
+## <a name="contributing"></a> Contributing
 
 ## <a name="questions"></a> Questions
-  
+
 For more information, head to https://github.com/sleepyhaha.
 Or if you have any questions, contact me at .
 
 ## <a name="credits"></a> Credits
 
-
-  
 ## <a name="license"></a> License
-  
+
 Licensed under the MIT license.
