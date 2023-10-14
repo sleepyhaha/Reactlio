@@ -1,9 +1,52 @@
+import { easeIn, easeOut, motion } from "framer-motion";
+
 export default function Projects() {
+  const animation = {
+    initial: {
+      opacity: 0,
+      y: "10vh",
+    },
+    animate: {
+      opacity: 1,
+      y: "0vh",
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.7,
+        ease: easeOut,
+      },
+    },
+  };
+
+  const childAnimation = {
+    initial: {
+      opacity: 0,
+      y: "10vh",
+    },
+    animate: {
+      opacity: 1,
+      y: "0vh",
+      transition: {
+        duration: 0.7,
+        ease: easeOut,
+      },
+    },
+  };
   return (
-    <div className="mt-5 mx-5">
-      <h1 className="font-bold">My Projects</h1>
-      <section className="columns-2 text-slate-900 font-extrabold mt-10">
-        <div className="relative group">
+    <motion.div
+      variants={animation}
+      initial="initial"
+      animate="animate"
+      exit={{ y: "-10" }}
+      className="mt-5 mx-5 h-2/3"
+    >
+      <motion.h1 variants={childAnimation} className="font-bold">
+        My Projects
+      </motion.h1>
+      <motion.section
+        variants={animation}
+        className="columns-2 text-slate-900 font-extrabold mt-10"
+      >
+        <motion.div variants={childAnimation} className="relative group">
           <a href="https://github.com/sleepyhaha/samsung-universe">
             <img
               src="src/assets/screenshot.png"
@@ -14,8 +57,8 @@ export default function Projects() {
               <p>AirItinerary</p>
             </div>
           </a>
-        </div>
-        <div className="relative group mt-5">
+        </motion.div>
+        <motion.div variants={childAnimation} className="relative group mt-5">
           <a href="https://github.com/sleepyhaha/team-samsung">
             <img
               src="src/assets/startscreen.png"
@@ -26,8 +69,8 @@ export default function Projects() {
               <p>PictoHang</p>
             </div>
           </a>
-        </div>
-        <div className="relative group">
+        </motion.div>
+        <motion.div variants={childAnimation} className="relative group">
           <a href="https://github.com/sleepyhaha/sams-coding-quiz">
             <img
               src="src/assets/coding-quiz.png"
@@ -38,8 +81,8 @@ export default function Projects() {
               <p>Coding Quiz</p>
             </div>
           </a>
-        </div>
-        <div className="relative group mt-5">
+        </motion.div>
+        <motion.div variants={childAnimation} className="relative group mt-5">
           <a href="https://github.com/sleepyhaha/week-2-challenge">
             <img
               src="src/assets/original-portfolio.jpg"
@@ -50,8 +93,8 @@ export default function Projects() {
               <p>Original Portfolio</p>
             </div>
           </a>
-        </div>
-      </section>
-    </div>
+        </motion.div>
+      </motion.section>
+    </motion.div>
   );
 }
