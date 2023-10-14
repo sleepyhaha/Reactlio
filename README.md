@@ -1,8 +1,42 @@
-# React + Vite
+# React Portfolio (Reactlio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A portfolio of my work built using React, Tailwind and Framer Motion
+
+![photo of app](/public/assets/deployed-app.png)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#test)
+- [Contributing](#contributing)
+- [Questions](#questions)
+- [Credits](#credits)
+- [License](#license)
+
+## <a name="installation"></a> Installation
+
+Head to https://main--guileless-sorbet-e3ba4c.netlify.app/ to view the deployed application
+
+## <a name="usage"></a> Usage
+
+See steps to install
+
+## <a name="test"></a> Tests
+
+## <a name="contributing"></a> Contributing
+
+## <a name="questions"></a> Questions
+
+For more information, head to https://github.com/sleepyhaha.
+Or if you have any questions, contact me at .
+
+## <a name="credits"></a> Credits
+
+## <a name="license"></a> License
+
+Licensed under the MIT license.
