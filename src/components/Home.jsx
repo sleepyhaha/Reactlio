@@ -48,7 +48,7 @@ export default function Home() {
         </motion.h1>
         <motion.img
           variants={childAnimation}
-          src="src\assets\me2.jpg"
+          src="/assets/me2.jpg"
           alt="just me"
           className="ml-10 mt-5"
         />
